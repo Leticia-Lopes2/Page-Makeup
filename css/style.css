@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/b.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+/*----------------------------------------------------HEADER-------------------------------------------------------*/
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 28px;
+}
+
+.cabecario-img {
+    height: 10vh;
+}
+
+.cabecario-img:hover {
+    transform: scale(1.2);
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.item-menu {
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.item-menu:hover {
+    color: #000000;
+    font-weight: 500;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+/*-----------------------------------------------------FIM HEADER-----------------------------------------------------*/
+
+/*----------------------------------------------------SECTION 1-------------------------------------------------------*/
+
+.conteudo-principal {
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito-texto {
+    display: flex;
+    text-align: center;
+    color: #753f29;
+    font-family: 'Noto Nastaliq Urdu', serif; 
+}
+
+.conteudo-principal-imagem {
+    height: 40vh;
+    width: 20vw;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.conteudo-principal-escrito-button {
+    height: 60px;
+    width: 180px;
+    background-color: #935a37;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 25px;
+}
+
+.conteudo-principal-escrito-button:hover {
+    color: #000000;
+    font-weight: 500;
+    box-shadow: 4px 4px 5px #935a37;
+    background-color: antiquewhite;
+    transform: scale(1.1);
+}
