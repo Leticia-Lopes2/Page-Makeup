@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto Slab', serif
 }
 
 body {
     background-image: url('../img/b.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1;
+    position: relative;
     height: 100vh;
 }
 
 /*----------------------------------------------------HEADER-------------------------------------------------------*/
-.cabecario {
+
+.cabecalho {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,11 +23,11 @@ body {
     padding: 28px;
 }
 
-.cabecario-img {
+.cabecalho-img {
     height: 10vh;
 }
 
-.cabecario-img:hover {
+.cabecalho-img:hover {
     transform: scale(1.2);
 }
 
@@ -36,16 +38,16 @@ body {
 }
 
 .item-menu {
-    color: white;
+    color: #ffffff;
     font-size: 1.3em;
-    font-family: 'Noto Nastaliq Urdu', serif;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .item-menu:hover {
-    color: #000000;
+    color: #9e5d12;
     font-weight: 500;
     text-decoration: underline;
     transform: scale(1.2);
@@ -55,41 +57,78 @@ body {
 /*----------------------------------------------------SECTION 1-------------------------------------------------------*/
 
 .conteudo-principal {
-    padding: 45px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    align-content: flex-end;
+    padding: 70px;
 }
 
 .conteudo-principal-escrito-texto {
-    display: flex;
+    font-size: 1.5em;
+    font-weight: 500;
     text-align: center;
-    color: #753f29;
-    font-family: 'Noto Nastaliq Urdu', serif; 
-}
-
-.conteudo-principal-imagem {
-    height: 40vh;
-    width: 20vw;
-    border-radius: 50%;
-    background-size: cover;
+    color: #eaddcd; 
+    padding: 35px;
 }
 
 .conteudo-principal-escrito-button {
+    color: white;
+    font-size: 20px;
     height: 60px;
     width: 180px;
     background-color: #935a37;
+    opacity: 55%;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    opacity: 25px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .conteudo-principal-escrito-button:hover {
-    color: #000000;
+    color: #df962a;
     font-weight: 500;
+    opacity: 65%;
     box-shadow: 4px 4px 5px #935a37;
-    background-color: antiquewhite;
+    background-color: rgb(221, 208, 192);
     transform: scale(1.1);
 }
+/*-------------------------------------------------FIM SECTION 1-----------------------------------------------------*/
+
+
+
+/*----------------------------------------------------SECTION 2-------------------------------------------------------*/
+/*
+.conteudo-secundario {
+    margin-top: 31.5%;
+    height: 100vh;
+    width: 98.3vw;
+    background-color: #d8b089;
+}*/
+
+/*--------------------------------------------------FIM SECTION 2-----------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------FOOTER--------------------------------------------------------*/
+
+footer {
+	text-align: center;
+	background: #935a37;
+    position: relative;
+	padding: 40px 0;
+    top: 200px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+.instagram {
+    cursor: pointer;
+}
+/*---------------------------------------------------FIM FOOTER------------------------------------------------------*/
